@@ -210,7 +210,8 @@ var exp = (function() {
             ],
             scale_width: 500,
             on_finish: function(data){
-                compAns1 = JSON.parse(data.responses)[`percentChk1_${round}`]
+                compAns1 = JSON.parse(data.responses)[`percentChk1_${round}`];
+                console.log(compAns1);
             }
         };
 
@@ -227,7 +228,8 @@ var exp = (function() {
             ],
             scale_width: 500,
             on_finish: function(data){
-                compAns2 = JSON.parse(data.responses)[`percentChk2_${round}`]
+                compAns2 = JSON.parse(data.responses)[`percentChk2_${round}`];
+                console.log(compAns2);
             },
         };
 
